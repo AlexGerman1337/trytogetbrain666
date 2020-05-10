@@ -13,6 +13,7 @@
     "gulp-sass": "^4.1.0"
   },
   "dependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.7",
+    "gulp-autoprefixer": "^7.0.1"
   }
 }
