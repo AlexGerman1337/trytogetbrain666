@@ -324,7 +324,7 @@ template {
 .menu {
   display: flex;
   justify-content: space-between;
-  align-tems: center; }
+  align-items: center; }
 
 .logo {
   color: #e3b873;
@@ -333,14 +333,10 @@ template {
 .nav__item {
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
-  margin-right: 40px; }
+  text-transform: uppercase; }
 
 .phone {
   color: #e3b873; }
-
-.contacts__phone {
-  margin-right: 45px; }
 
 body {
   font-family: sans-serif;
