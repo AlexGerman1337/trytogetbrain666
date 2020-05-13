@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Futura Book';
-  src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
+  src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
 
 @font-face {
   font-family: 'Futura Demi';
-  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff");
+  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
@@ -330,11 +330,16 @@ template {
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     transition: box-shadow 0.3s; }
     .button--primary:hover {
-      box-shadow: none; }
+      box-shadow: none;
+      color: #131313; }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
-    color: #fff; }
+    color: #fff;
+    transition: box-shadow 0.3s; }
+    .button--outline:hover {
+      box-shadow: none;
+      color: #131313; }
 
 .container {
   width: 85%;
@@ -352,13 +357,16 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Yeseva One', cursive; }
-  .section-title__image::before, .section-title__image::after {
-    content: '';
-    display: inline-block;
-    vertical-align: text-top;
-    width: 32px;
-    height: 2px;
-    background-color: #e3b873; }
+  .section-title__image {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section-title__image::before, .section-title__image::after {
+      content: '';
+      width: 32px;
+      height: 2px;
+      background-color: #e3b873;
+      margin: 0px 10px; }
 
 .header {
   position: fixed;
@@ -388,7 +396,13 @@ body {
     color: #e3b873; }
 
 .phone {
-  color: #e3b873; }
+  color: #e3b873;
+  transition: 0.2s; }
+  .phone:hover {
+    color: #fff; }
+
+.contacts__phone {
+  margin-right: 30px; }
 
 .hero {
   position: relative;
@@ -435,6 +449,8 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff; }
+    .hero__scroll-down:hover {
+      color: #e3b873; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/Vectorarrow-down.svg") no-repeat center;
@@ -463,6 +479,8 @@ body {
       height: 1px;
       background-color: #e3b873;
       margin-left: 8px; }
+    .instagram__link:hover {
+      color: #fff; }
 
 .title {
   margin: 0;
