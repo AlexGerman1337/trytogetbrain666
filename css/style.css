@@ -345,7 +345,7 @@ template {
       border-color: #e3b873; }
 
 .container {
-  width: 85%;
+  width: 90%;
   max-width: 1256px;
   margin: 0 auto; }
 
@@ -519,7 +519,7 @@ body {
   .nav__item {
     margin-right: 1rem; } }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1120px) {
   .nav {
     display: none; }
   .hero__instagram {
@@ -531,23 +531,28 @@ body {
   .contacts__phone {
     color: #fff;
     margin-right: 0;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 1rem; }
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64rem; }
+    font-size: 1.64rem;
+    max-width: 22.86rem; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
-    max-width: 22.86rem; }
+    width: 100%; }
   .hero__text {
+    display: block;
+    width: 100%;
     font-size: 1.29rem;
     margin-bottom: 2.28rem; }
   .hero__button {
     display: block;
+    width: 100%;
     min-width: 22.86rem;
     margin-bottom: 1.85rem; } }
 
-@media screen and (max-height: 540 px) {
+@media screen and (max-height: 590px) {
   .hero__scroll-down {
     display: none; } }
