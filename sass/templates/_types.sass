@@ -1,12 +1,7 @@
 .types
   &__section-title
     margin-bottom: 2.4rem
-    
-
-
 .row
-  width: 100rem
-  height: 43.42rem
   display: flex
   align-items: flex-start
   justify-content: space-between
@@ -60,7 +55,13 @@
       font-weight: normal
       font-size: 16px
       line-height: 25px
-      margin-bottom: 3.1+px
+      margin-bottom: 3.1px
+@media screen and ( max-width: 760px )  
+  .row
+    flex-direction: column
+    align-items: flex-start
+  .card
+      margin-bottom: 8rem
 
 
 
