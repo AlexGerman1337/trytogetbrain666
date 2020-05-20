@@ -383,16 +383,17 @@ img {
   top: 0;
   z-index: 99;
   background-color: #131313;
-  padding: 24px 0; }
+  padding: 23px 0; }
 
 .menu {
   margin-right: 1rem;
-  margin-left: 1rem;
+  margin-left: -12px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
 .logo {
+  margin-right: 15px;
   font-style: normal;
   color: #e3b873;
   font-weight: 500;
@@ -408,7 +409,7 @@ img {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 2.9rem;
+  margin-right: 36px;
   transition: 0.2s; }
   .nav__item:hover {
     color: #e3b873; }
@@ -420,8 +421,8 @@ img {
     color: #fff; }
 
 .contacts__phone {
-  margin-right: 43px;
   font-style: normal;
+  margin-right: 40px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px; }
@@ -436,9 +437,6 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff; }
@@ -453,14 +451,15 @@ img {
   .hero__content {
     max-width: 47.85rem;
     position: relative;
-    margin-left: 4.28rem; }
+    margin-top: 190px;
+    margin-left: -490px; }
   .hero__text {
     max-width: 550px;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 30px;
-    margin-bottom: 42px; }
+    margin-bottom: 44px; }
   .hero__button {
     font-weight: 500;
     font-size: 13.3px;
@@ -508,7 +507,8 @@ img {
   background-color: #131313;
   justify-content: center;
   align-items: center;
-  width: 6.5rem; }
+  width: 5.95rem;
+  margin-top: -92px; }
   .instagram__link {
     display: flex;
     text-transform: uppercase;
@@ -527,8 +527,7 @@ img {
       color: #fff; }
 
 .title {
-  margin: 0;
-  margin-bottom: -0.5rem;
+  margin-bottom: -8px;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-style: normal;
