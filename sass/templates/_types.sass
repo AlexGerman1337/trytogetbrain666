@@ -3,6 +3,7 @@
     margin-bottom: 2.4rem
     margin: 0 auto
 .row
+  width: 85.3%
   max-width: 1232px
   display: flex
   align-items: flex-start
@@ -15,7 +16,7 @@
     &__text
       position: relative
       height: 20.3rem
-      width: 23.5rem
+      max-width: 23.5rem
       margin: 0 auto
       margin-top: -9.3rem
       padding: 0.5rem 2.25rem
@@ -71,7 +72,12 @@
       font-size: 15px
       line-height: 22.2px
       margin-bottom: 3.4px
-
+@media screen and ( max-width: 760px )  
+  .row
+    flex-direction: column
+    align-items: flex-start
+  .card
+      margin-bottom: 8rem
 
 
 

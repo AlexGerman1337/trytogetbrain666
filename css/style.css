@@ -567,7 +567,7 @@ img {
     .row .card__text {
       position: relative;
       height: 20.3rem;
-      width: 23.5rem;
+      max-width: 23.5rem;
       margin: 0 auto;
       margin-top: -9.3rem;
       padding: 0.5rem 2.25rem;
@@ -623,21 +623,20 @@ img {
       line-height: 22.2px;
       margin-bottom: 3.4px; }
 
+@media screen and (max-width: 760px) {
+  .row {
+    flex-direction: column;
+    align-items: flex-start; }
+  .card {
+    margin-bottom: 8rem; } }
+
 @media screen and (max-width: 1220px) {
   html {
     font-size: 12px; }
   .nav__item {
     margin-right: 1rem; }
   .menu {
-    margin-right: 2rem; }
-  .row {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  .card {
-    margin-bottom: 15rem; }
-    .card__text {
-      height: 23rem; } }
+    margin-right: 2rem; } }
 
 @media screen and (max-width: 1120px) {
   .nav {
