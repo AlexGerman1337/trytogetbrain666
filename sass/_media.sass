@@ -1,24 +1,13 @@
-@media screen and ( max-width: 1220px )
+@media screen and ( max-width: 1410px )
   html
       font-size: 12px
   .nav
     &__item
-      margin-right: 1rem 
+      margin-right: 0.5rem 
   .menu
-      margin-right: 2rem
-  // .row
-  //   flex-direction: column
-  //   align-items: center
-  //   justify-content: center
-  // .card
-  //     margin-bottom: 15rem
-  //     &__text
-  //       &--minimal
-  //       height: 23rem
-     
+      margin-right: 1rem
 
-
-@media screen and ( max-width: 1120px )
+@media screen and ( max-width: 1130px )
   .nav
     display: none
   .hero
@@ -45,6 +34,7 @@
     font-weight: normal
     font-size: 13px
   .title
+    max-width: 350px
     font-family: Yeseva One
     font-style: normal
     font-weight: normal
@@ -76,3 +66,80 @@
   .hero
     &__scroll-down
       display: none
+
+@media screen and ( max-width: 1225px )
+  .row
+    .card
+      &__text
+        &--full
+          height: 31rem
+      &__pricetag
+        position: absolute
+        left: 0
+        bottom: -3.5rem
+        &--full
+          position: absolute
+          left: 0
+          bottom: -3.5rem
+
+@media screen and ( max-width: 955px )
+  .container
+    width: 95%
+    margin: 0 auto
+  .row
+    display:flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    .col
+      width: 98%
+    .card
+      margin: 0 auto
+      margin-bottom: 6.45rem
+      &__text
+        position: relative
+        height: 20.3rem
+        max-width: 22.7rem
+        margin: 0
+        margin-top: -12.2rem
+        padding: 0.5rem 2.25rem
+        background-color: $light
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+        &--minimal
+          padding-top: 4px
+          height: 14.8rem
+      &__title
+        margin-bottom: 7px
+        margin-left: 5px
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
+        line-height: 138.6%
+      &__item
+        font-style: normal
+        font-weight: normal
+        font-size: 13px
+        line-height: 147.8%
+        &--hidden
+          display: none
+      &__pricetag
+        position: absolute
+        left: 0
+        bottom: -1.5rem
+        font-size: 1.4rem
+        font-family: Yeseva One
+        font-style: normal
+        font-size: 15px
+        line-height: 138.6%
+        text-transform: uppercase
+        background-color: $primary
+        color: $light
+        padding: 0.8rem 2.7rem
+        &--minimal
+          padding: 0.8rem 4rem
+        &--standart
+          padding: 0.8rem 3.8rem
+        &--full
+          padding: 0.8rem 3.8rem
+      &__image
+        max-width: 340px

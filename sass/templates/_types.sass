@@ -1,15 +1,16 @@
 .types
+  margin: 0 auto
   &__section-title
     margin-bottom: 2.4rem
     margin: 0 auto
 .row
-  width: 85.3%
+  width: 98%
   max-width: 1232px
   display: flex
   align-items: flex-start
   justify-content: space-between
   .col
-    flex-basis: 32%
+    flex-basis: 31.5%
   .card
     max-width: 390px
     max-height: 48.2rem
@@ -64,21 +65,14 @@
         padding: 1.05rem 4.3em
         padding-left: 34px
     &__image
-      width: 390px
-      height: 420px
     &__item
       font-style: normal
       font-weight: normal
       font-size: 15px
       line-height: 22.2px
       margin-bottom: 3.4px
-@media screen and ( max-width: 760px )  
-  .row
-    flex-direction: column
-    align-items: flex-start
-  .card
-      margin-bottom: 8rem
-
-
+      &--ellipsis
+          display: none
+ 
 
 
