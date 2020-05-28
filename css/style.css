@@ -636,6 +636,8 @@ img {
     .row .card__pricetag--full {
       padding: 1.05rem 4.3em;
       padding-left: 34px; }
+  .row .card__image--blackout {
+    filter: grayscale(0.3); }
   .row .card__item {
     font-style: normal;
     font-weight: normal;
@@ -781,4 +783,5 @@ img {
         .row .card__pricetag--full {
           padding: 0.8rem 3.8rem; }
       .row .card__image {
-        max-width: 340px; } }
+        max-width: 340px;
+        filter: none; } }
