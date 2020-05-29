@@ -19,9 +19,8 @@
   &__dialog
     position: relative
     background: $dark url('../img/bg-lines.svg') no-repeat center
-    padding: 2.357rem 3.5rem 1.928rem
+    padding: 2.3rem 3rem
     color: $light
-  
   &__close
     position: absolute
     right: 0
@@ -34,25 +33,39 @@
     cursor: pointer
   &__title
     font-family: 'Yeseva One', cursive
+    font-style: normal
+    font-weight: normal
     font-size: 1.357rem
+    line-height: 26px
     text-align: center
-    margin: 0
-    margin-bottom: 2.428rem
-    max-width: 36.35rem
+    margin-bottom: 1.9rem
+    max-width: 30rem
+    margin-top: 0px
   &__form
     display: flex
     flex-direction: column
   &__input
-    margin-bottom: 3.428rem
+    margin-bottom: 3.3rem
     &:last-of-type
-    margin-bottom: 1rem
   &__policy
     margin-bottom: 2.7rem
   &__button
+    font-family: 'FuturaDemiC'
+    font-style: normal
+    font-weight: 500
+    font-size: 12.3px
+    line-height: 18px
+    text-align: center
     align-self: flex-end
-
-
-
+    padding: 1.25rem 3.3rem
+    background-color: $primary
+    margin-top: 0px
+    margin-right: 5px
+  .form
+    &__label
+      margin-left: 5px
+    &__input
+      margin-left: 5px
 
 
 
@@ -71,6 +84,8 @@
       color: $light
 
   .policy
+    margin-left: 5px
+    margin-top: -48px
     &__checkbox
       opacity: 0
       visibility: hidden
