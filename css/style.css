@@ -648,6 +648,8 @@ img {
       display: none; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   left: 0;
   top: 0;
@@ -658,13 +660,16 @@ img {
   background-color: rgba(19, 19, 19, 0.6);
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 199; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     position: relative;
     background: #131313 url("../img/bg-lines.svg") no-repeat center;
     padding: 2.357rem 3.5rem 1.928rem;
-    color: #fff;
-    z-index: 1; }
+    color: #fff; }
   .modal__close {
     position: absolute;
     right: 0;
