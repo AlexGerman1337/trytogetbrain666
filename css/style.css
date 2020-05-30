@@ -717,7 +717,7 @@ img {
     padding-left: 34px; }
 
 .row .card__image--blackout {
-  filter: grayscale(0.3); }
+  filter: brightness(70%); }
 
 .row .card__item {
   font-style: normal;
