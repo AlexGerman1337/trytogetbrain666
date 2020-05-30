@@ -356,8 +356,11 @@ template {
 .col-30 {
   flex-basis: 31.5%; }
 
-.col-50 {
-  width: 50%; }
+.col-40 {
+  width: 45%; }
+
+.col-60 {
+  width: 55%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -400,7 +403,8 @@ img {
       font-family: Futura Book;
       font-size: 1.28rem;
       line-height: 2.07rem;
-      max-width: 31.57rem; }
+      max-width: 31.57rem;
+      margin-bottom: 22px; }
     .section-title__image {
       display: flex;
       align-items: center;
@@ -597,11 +601,21 @@ img {
 
 .swiper-slide {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 45px; }
+  .swiper-slide__value {
+    font-family: Futura Book;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px; }
+  .swiper-slide-container {
+    max-width: 641px;
+    padding-right: 185px;
+    margin-bottom: 81px; }
   .swiper-slide__text {
     flex-basis: 50%;
-    margin-bottom: 2.42rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 1.2rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -609,6 +623,8 @@ img {
     color: #e3b873;
     text-transform: uppercase;
     margin-bottom: 0.64rem; }
+  .swiper-slide-image {
+    margin-top: 100px; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3); }
@@ -635,6 +651,11 @@ img {
   width: auto;
   bottom: -2px; }
 
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 9px;
+  width: 9px;
+  height: 9px; }
+
 .types {
   margin: 0 auto; }
   .types__section-title {
@@ -646,9 +667,15 @@ img {
   .section-title__heading {
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 21.5px;
     line-height: 28px;
     margin-top: 100px; }
+    .section-title__heading--primary {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 37px; }
   .section-title__decrtiption {
     font-family: Futura Book;
     max-width: 730px;
@@ -964,3 +991,34 @@ img {
       .row .card__image {
         max-width: 340px;
         filter: none; } }
+
+@media screen and (max-width: 1100px) {
+  .swiper-slide-container {
+    padding-right: 50px; } }
+
+@media screen and (max-width: 710px) {
+  .col-40 {
+    width: 100%; }
+  .col-60 {
+    margin-top: -65px;
+    width: 100%; }
+  .section-title__heading--primary {
+    font-size: 20px;
+    line-height: 30px; }
+  .section-title__word::after {
+    display: none; }
+  .section-title__text {
+    font-size: 1.17rem;
+    line-height: 1.9rem;
+    margin-top: 25px; }
+  .swiper-slide__heading {
+    font-size: 1.15rem; }
+  .swiper-slide-container {
+    padding-right: 0px;
+    margin-top: -3px;
+    margin-bottom: 38px; } }
+
+.swiper-slide__value {
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: -2px; }
